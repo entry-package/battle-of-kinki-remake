@@ -1,4 +1,4 @@
-// Self-contained page behavior. No Strikingly runtime, tracking, or account APIs.
+// Local navigation and gallery behavior. Consent and analytics are managed in analytics.js.
 (() => {
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
