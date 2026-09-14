@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>お問い合わせ | BATTLE OF KINKI</title>
+  <meta name="description" content="BATTLE OF KINKIの大会・参加・観戦・協賛・取材に関するお問い合わせフォームです。">
+  <meta name="robots" content="index,follow"><link rel="canonical" href="https://www.bok-esports.jp/contact.html">
+  <meta property="og:type" content="website"><meta property="og:title" content="お問い合わせ | BATTLE OF KINKI">
+  <meta property="og:description" content="大会・参加・観戦・協賛・取材について、フォームからお問い合わせいただけます。">
+  <meta property="og:url" content="https://www.bok-esports.jp/contact.html">
+  <link rel="stylesheet" href="contact.css"><link rel="stylesheet" href="analytics.css">
+  <script defer src="contact.js"></script><script defer src="analytics.js"></script>
+</head>
+<body>
+<header class="contact-header"><a class="brand" href="./" aria-label="BATTLE OF KINKI ホーム"><img src="assets/05b895bba8e0306a.png" width="56" height="56" alt="BoK"><span>BATTLE OF KINKI</span></a><a href="./">トップへ戻る</a></header>
+<main>
+  <div class="contact-heading"><p class="eyebrow">CONTACT</p><h1>お問い合わせ</h1><p>大会・参加・観戦・協賛・取材などのご質問やご相談を、<br class="desktop-only">下記フォームからお送りください。</p></div>
+  <section class="form-card" aria-labelledby="form-title">
+    <h2 id="form-title">お問い合わせフォーム</h2>
+    <p class="intro">内容を確認のうえ、担当より順次ご返信します。<span class="required">必須</span>の項目をご入力ください。</p>
+    <form id="bok-contact-form" method="post" data-endpoint="https://script.google.com/macros/s/AKfycbxM0Z3l8nbRiOY8aRtiQ8mcrpuqPCSdOyjU0r18nkgDVD9vHybIXb6gWfP1-PO8pNQn8g/exec" target="bok-contact-result-frame">
+      <fieldset id="contact-fields"><legend class="visually-hidden">お問い合わせ内容の入力</legend>
+      <div class="field-grid">
+        <label for="contact-name">お名前 <span class="required">必須</span><input id="contact-name" name="name" type="text" autocomplete="name" maxlength="100" required></label>
+        <label for="contact-organization">ご所属 <span class="optional">任意</span><input id="contact-organization" name="organization" type="text" autocomplete="organization" maxlength="200" placeholder="会社・学校・団体名"></label>
+        <label for="contact-email">メールアドレス <span class="required">必須</span><input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required aria-describedby="email-help"><small id="email-help">受付の控えと担当からの返信をお送りします。</small></label>
+        <label for="contact-phone">電話番号 <span class="optional">任意</span><input id="contact-phone" name="phone" type="tel" autocomplete="tel" maxlength="40"></label>
+        <label class="full-width" for="contact-category">お問い合わせの種類 <span class="required">必須</span><select id="contact-category" name="category" required><option value="" selected disabled>選択してください</option><option>大会・参加について</option><option>観戦・会場について</option><option>協賛・協力について</option><option>取材・メディア関係</option><option>その他</option></select></label>
+        <label class="full-width" for="contact-message">お問い合わせ内容 <span class="required">必須</span><textarea id="contact-message" name="message" rows="7" maxlength="5000" required></textarea><small>5,000文字以内でご入力ください。</small></label>
+      </div>
+      <div class="hp" aria-hidden="true"><label for="contact-website">この欄は空欄にしてください<input id="contact-website" type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+      <input name="ts" id="contact-ts" type="hidden"><input name="requestId" id="contact-request-id" type="hidden"><input name="pageOrigin" id="contact-origin" type="hidden">
+      <p class="privacy-note" id="privacy-note">入力された情報は、お問い合わせへの対応と受付の控えの送信に使用します。フォームの送信にはGoogleのサービスを利用します。入力内容をアクセス解析へ送信することはありません。</p>
+      <label class="privacy-check"><input type="checkbox" name="privacy" value="yes" required><span>上記の個人情報の取り扱いに同意する <span class="required">必須</span></span></label>
+      </fieldset>
+      <button class="submit-button" id="contact-submit" type="submit">送信する</button>
+      <noscript><p>フォームの送信にはJavaScriptが必要です。メールでもお問い合わせいただけます。</p></noscript>
+    </form>
+    <div id="contact-status" role="status" aria-live="polite" tabindex="-1" hidden></div>
+    <iframe name="bok-contact-result-frame" title="お問い合わせ送信結果" class="result-frame" hidden></iframe>
+    <p class="email-fallback">メールでのお問い合わせ：<a href="mailto:info@package-inc.com">info@package-inc.com</a></p>
+  </section>
+</main>
+<footer><p>©2025 - BoK実行委員会</p><div class="bok-privacy-links"><a href="pages/cookie-policy/">Cookieポリシー</a><button type="button" data-analytics-settings>アクセス解析の設定</button></div></footer>
+</body></html>

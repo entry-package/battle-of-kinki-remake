@@ -1,0 +1,50 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f5f5f5; color: #222; font: 16px/1.7 "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; }
+a { color: #174e91; text-underline-offset: .2em; }
+.contact-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 12px max(20px, calc((100vw - 1100px) / 2)); background: #080808; color: #fff; }
+.contact-header a { color: #fff; font-size: 14px; }
+.brand { display: flex; align-items: center; gap: 14px; text-decoration: none; font-weight: 700; }
+.brand img { display: block; background: #fff; flex-shrink: 0; }
+.brand span { letter-spacing: .04em; }
+.contact-heading { text-align: center; padding: 52px 20px 38px; }
+.eyebrow { font-weight: 700; letter-spacing: .18em; margin: 0 0 10px; font-size: 13px; }
+h1 { font-size: clamp(28px, 5vw, 42px); line-height: 1.4; margin: 0 0 18px; }
+h2 { font-size: 23px; margin: 0 0 14px; line-height: 1.5; }
+.contact-heading p:last-child { color: #555; margin: 0; }
+.form-card { max-width: 820px; margin: 0 auto 64px; padding: 40px; background: #fff; border: 1px solid #ddd; border-radius: 8px; }
+.intro { color: #555; margin: 0 0 28px; font-size: 14px; }
+fieldset { min-width: 0; border: 0; margin: 0; padding: 0; }
+.field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.full-width { grid-column: 1 / -1; }
+label { display: block; min-width: 0; font-weight: 700; }
+.required, .optional { display: inline-block; font-size: 11px; font-weight: 500; vertical-align: middle; border-radius: 3px; padding: 0 5px; margin-left: 6px; }
+.required { color: #a71c26; background: #fff0f1; }
+.optional { color: #555; background: #eee; }
+input:not([type="checkbox"]):not([type="hidden"]), select, textarea { display: block; width: 100%; min-height: 48px; margin-top: 8px; padding: 11px 12px; border: 1px solid #a8a8a8; border-radius: 5px; font: inherit; font-size: 16px; color: #222; background: #fff; }
+textarea { resize: vertical; }
+small { display: block; font-size: 12px; font-weight: 400; color: #666; margin-top: 6px; }
+input:focus-visible, textarea:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid #2c73b8; outline-offset: 3px; }
+.privacy-note { padding: 16px; margin: 28px 0 16px; background: #f5f5f5; color: #555; font-size: 13px; }
+.privacy-check { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; cursor: pointer; }
+.privacy-check input { width: 20px; height: 20px; margin: 2px 0 0; flex-shrink: 0; }
+.submit-button { display: block; width: 100%; max-width: 320px; min-height: 52px; margin: 30px auto 0; border: 1px solid #111; border-radius: 5px; background: #111; color: white; font: inherit; font-weight: 700; cursor: pointer; }
+.submit-button:hover { background: #333; }
+.submit-button:disabled { opacity: .6; cursor: wait; }
+.hp, .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+[hidden] { display: none !important; }
+#contact-status { padding: 20px; margin-top: 24px; border: 1px solid #b8c9d9; border-radius: 5px; background: #f2f7fc; white-space: pre-line; overflow-wrap: anywhere; }
+#contact-status[data-state="error"], #contact-status[data-state="uncertain"] { border-color: #dca7a7; background: #fff6f6; }
+.email-fallback { padding-top: 24px; margin: 26px 0 0; border-top: 1px solid #ddd; color: #555; font-size: 14px; overflow-wrap: anywhere; }
+footer { padding: 25px 20px 40px; text-align: center; background: #fff; font-size: 14px; }
+@media(max-width: 600px) {
+  .contact-header { padding: 10px 14px; gap: 12px; }
+  .brand { gap: 8px; }
+  .brand img { width: 44px; height: 44px; }
+  .brand span { font-size: 11px; max-width: 95px; }
+  .contact-header>a:last-child { font-size: 12px; white-space: nowrap; }
+  .contact-heading { padding: 34px 20px 28px; }
+  .desktop-only { display: none; }
+  .form-card { margin: 0 12px 36px; padding: 24px 18px; }
+  .field-grid { grid-template-columns: 1fr; gap: 22px; }
+  h2 { font-size: 20px; }
+}
