@@ -1,0 +1,29 @@
+.bok-consent {
+  position: fixed; z-index: 10001; right: 20px; bottom: 20px;
+  width: min(420px, calc(100vw - 40px)); box-sizing: border-box;
+  max-height: calc(100dvh - 100px); overflow: auto;
+  padding: 20px; border: 1px solid #ccc; border-radius: 8px;
+  background: #fff; color: #222; box-shadow: 0 4px 24px #0003;
+  font: 14px/1.6 "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
+  text-align: left;
+}
+.bok-consent[hidden] { display: none !important; }
+.bok-consent h2 { margin: 0 0 8px; color: #111; font-size: 17px; line-height: 1.5; }
+.bok-consent p { margin: 0 0 14px; }
+.bok-consent a { color: #184d9b; text-decoration: underline; margin-left: .4em; }
+.bok-consent-actions { display: flex; gap: 10px; }
+.bok-consent-actions button {
+  flex: 1; min-height: 44px; padding: 8px; border: 1px solid #555;
+  border-radius: 4px; background: #fff; color: #222; font: inherit; cursor: pointer;
+}
+.bok-consent button:hover { background: #eee; }
+.bok-consent button:focus-visible, [data-analytics-settings]:focus-visible { outline: 3px solid #286ccd; outline-offset: 3px; }
+.bok-privacy-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 20px; margin-top: 16px; }
+.bok-privacy-links a, [data-analytics-settings] {
+  color: #555; font: 14px/1.6 "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
+  text-decoration: underline;
+}
+[data-analytics-settings] { border: 0; background: none; padding: 0; cursor: pointer; }
+@media (max-width: 767px) {
+  .bok-consent { left: 12px; right: 12px; bottom: calc(72px + env(safe-area-inset-bottom, 0px)); width: auto; padding: 16px; }
+}
