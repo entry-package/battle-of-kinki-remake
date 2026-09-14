@@ -12,7 +12,7 @@ body { margin: 0; min-width: 0; }
 .s-nav-ellipsis .s-collapsed-nav { display: none !important; }
 .s-nav-ellipsis.bok-expanded .s-collapsed-nav { display: block !important; }
 .s-nav-ellipsis [role="button"] { cursor: pointer; }
-.s-nav-ellipsis .s-collapsed-nav { position: absolute !important; top: 100%; right: 0; left: auto !important; width: max-content; min-width: 210px; max-height: 70vh; overflow: auto; z-index: 1200; padding: 8px 0; background: #000; box-sizing: border-box; }
+.s-nav-ellipsis .s-collapsed-nav { position: absolute !important; top: 100%; right: 0; left: auto !important; width: max-content; min-width: 210px; max-height: calc(100vh - 100px) !important; overflow: auto; z-index: 1200; padding: 8px 0; background: #000; box-sizing: border-box; }
 .s-collapsed-nav .s-nav-li { display: block !important; float: none !important; width: 100%; white-space: nowrap; }
 .s-collapsed-nav .s-nav-li[hidden] { display: none !important; }
 .s-collapsed-nav .s-nav-link-container { display: block !important; }
@@ -49,6 +49,15 @@ body.bok-gallery-open { overflow: hidden; }
   #s-content .container .columns { max-width: 100%; box-sizing: border-box; }
   #s-content .s-rich-text-wrapper { overflow-wrap: anywhere; }
   #s-content .s-section-1 .s-font-title { overflow-wrap: normal; }
+  /* Keep the original 2000 x 1116 artwork above the mobile title. */
+  #s-content .s-section-1 .s-section {
+    background-position: center top !important;
+    background-size: 100% auto !important;
+    background-color: #111 !important;
+    padding-top: calc(55.8vw + 20px) !important;
+    padding-bottom: 80px !important;
+  }
+  #s-content .s-section-1 .s-item-title p:not(.s-title) { display: none; }
   #bok-gallery { padding: 52px 35px; }
   .s-cookie-notification-bar { padding-bottom: max(12px, env(safe-area-inset-bottom)); }
 }
