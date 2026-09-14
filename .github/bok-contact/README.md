@@ -25,6 +25,14 @@ explicitly marked test from the production form and independently verify both
 the notification in `info@package-inc.com` and the sender receipt. Inspect the
 actual From header on both messages and confirm `info@package-inc.com`.
 
+## Published receiver
+
+- Owner / From: `info@package-inc.com`
+- Notification To: `info@package-inc.com`
+- Apps Script project: `1hmX038fMTCiF-GjqSeB4q5ZSd3fxYuw4RvSv5qCnkH8MUch9uBLbwBZC`
+- Deployment: version 1, 2026-09-14
+- Deployment ID: `AKfycbxM0Z3l8nbRiOY8aRtiQ8mcrpuqPCSdOyjU0r18nkgDVD9vHybIXb6gWfP1-PO8pNQn8g`
+
 ## Behavior and limits
 
 - The form waits for a trusted Apps Script response with the matching request ID;
