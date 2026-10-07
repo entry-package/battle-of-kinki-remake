@@ -76,7 +76,7 @@
       complete = true;
       form.hidden = true;
       message('お問い合わせを受け付けました。担当が確認し、順次ご返信します。\n受付番号：' + data.receipt +
-        (data.copySent ? '\n入力されたメールアドレスに受付の控えをお送りしました。' : '\n受付の控えを送信できませんでしたが、お問い合わせは受け付けています。'), 'success');
+        (data.copySent ? '\n入力されたメールアドレスに受付の控えをお送りしました。' : '\n受付メールの送信結果を確認できていませんが、お問い合わせは受け付けています。'), 'success');
     } else if (data.status === 'uncertain') {
       complete = true;
       submit.hidden = true;
